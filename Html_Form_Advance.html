@@ -1,0 +1,78 @@
+<html>
+<head>
+    <title>Adv Features Form</title>
+
+    <style>
+        body{
+            background: bisque;
+        }
+
+        form{
+            padding-left: 50px ;
+            padding-bottom: 50px;
+            border: 2px solid red;
+            margin: 50px ;
+        }
+    </style>
+</head>
+
+<body>
+<form novalidate>
+     <h3>Contact Form</h3>
+
+  <label>Name: </label>
+  <input type="text" name="ename" maxlength="10"  size="20" value="" readonly><br><br>
+
+  <label>Email: </label>
+  <input type="email" name="email" autofocus><br><br>
+
+  <label>Joining Date:</label>
+  <input type="date" name="jdata"><br><br>
+
+  <label>Login Time:</label>
+  <input type="time" name="ltime"><br><br>
+
+  <label>Birth Date and Time:</label>
+  <input type="datetime-local" name="bdatetime"><br><br>
+
+  <label>Select Gender:</label><br>
+  <input type="radio" name="gender" value="male">Male<br>
+  <input type="radio" name="gender" value="female">Female <br><br>
+
+  <label>Select Your <mark>Company:</mark></label>
+  <select name="company">
+    <option value="tcs">TCS</option>
+    <option value="wipro">Wipro</option>
+    <option value="cts">CTS</option>
+    <option value="info">Infosys</option>
+  </select><br><br>
+
+  <label>Select Preffered <mark>Locations:</mark></label><br>
+  <input type="checkbox"  name="ploc" value="hyd">Hyderabad<br>
+  <input type="checkbox"  name="ploc" value="bang">Bangalore<br>
+  <input type="checkbox"  name="ploc" value="che">Chennai<br>
+  <input type="checkbox"  name="ploc" value="pune">Pune<br><br>
+
+  <label>Enter Qualification:</label>
+  <input list="qual">
+  <datalist id="qual">
+    <option>Btech</option>
+    <option>BE</option>
+  </datalist><br><br>
+
+  <label>Upload Your Resume:</label>
+  <input type="file" name="resume"><br><br>
+
+  <fieldset>
+    <legend>Personal Info</legend>
+    Name: &nbsp; <input type="text"><br><br>
+    Mobile:<input type="number"><br><br>
+    Father: <input type="text"><br>
+  </fieldset><br>
+
+  <input type="submit" value="Send">
+  <input type="reset" value="Clear">
+
+</form>
+</body>
+</html>
